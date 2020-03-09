@@ -6,12 +6,21 @@
         xmlns:local="clr-namespace:Internet_Uptimer"
         mc:Ignorable="d"
         Title="Internet Uptimer" Height="450" Width="800" Closing="Window_Closing" Closed="Window_Closed">
-    <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="343,33,0,0" TextWrapping="Wrap" Text="Internet Uptimer" VerticalAlignment="Top" FontSize="24"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="238,0,0,0" VerticalAlignment="Top" Width="100" Source="hiclipart.com.res.ico"/>
-        <TextBlock HorizontalAlignment="Left" Margin="238,176,0,0" TextWrapping="Wrap" Text="Status:" VerticalAlignment="Top" FontSize="30"/>
-        <TextBlock x:Name="onlineTxt" HorizontalAlignment="Left" Margin="359,176,0,0" TextWrapping="Wrap" Text="ONLINE" VerticalAlignment="Top" FontSize="30" Foreground="DarkGreen" FontWeight="Bold"/>
-        <TextBlock x:Name="offlineTxt" HorizontalAlignment="Left" Margin="359,176,0,0" TextWrapping="Wrap" Text="OFFLINE" VerticalAlignment="Top" FontSize="30" Foreground="DarkRed" FontWeight="Bold"/>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <!--<MenuItem Header="_Open"/>-->
+                <MenuItem Header="_Exit" Click="MenuItem_Click"/>
+                <!--<MenuItem Header="_Save"/>-->
+            </MenuItem>
+        </Menu>
+        <Grid>
+            <TextBlock HorizontalAlignment="Left" Margin="343,33,0,0" TextWrapping="Wrap" Text="Internet Uptimer" VerticalAlignment="Top" FontSize="24"/>
+            <Image HorizontalAlignment="Left" Height="100" Margin="238,0,0,0" VerticalAlignment="Top" Width="100" Source="hiclipart.com.res.ico"/>
+            <TextBlock HorizontalAlignment="Left" Margin="238,176,0,0" TextWrapping="Wrap" Text="Status:" VerticalAlignment="Top" FontSize="30"/>
+            <TextBlock x:Name="onlineTxt" HorizontalAlignment="Left" Margin="359,176,0,0" TextWrapping="Wrap" Text="ONLINE" VerticalAlignment="Top" FontSize="30" Foreground="DarkGreen" FontWeight="Bold"/>
+            <TextBlock x:Name="offlineTxt" HorizontalAlignment="Left" Margin="359,176,0,0" TextWrapping="Wrap" Text="OFFLINE" VerticalAlignment="Top" FontSize="30" Foreground="DarkRed" FontWeight="Bold"/>
 
-    </Grid>
+        </Grid>
+    </DockPanel>
 </Window>

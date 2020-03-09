@@ -177,5 +177,12 @@ namespace Internet_Uptimer
             ShowTrayIcon(false);
             m_notifyIcon.Dispose();
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            IsClosing = true;
+            //Poller.Abort();
+            this.Close();
+        }
     }
 }
